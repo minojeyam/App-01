@@ -76,3 +76,28 @@ li {
   accent-color: #ffff66; /* Yellow checkbox color */
   cursor: pointer;
 }
+
+#prioritySelect {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #023d54;
+  font-size: 14px;
+}
+
+.priority-low {
+  border-left-color: green;
+}
+
+.priority-medium {
+  border-left-color: orange;
+}
+
+.priority-high {
+  border-left-color: red;
+}
+
+#progress {
+  color: #023d54;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
