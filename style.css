@@ -1,45 +1,74 @@
 body {
-  font-family: sans-serif;
-  background-color: #f4f4f4;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
   text-align: center;
-  margin-top: 50px;
+  padding-top: 50px;
+  margin: 0;
 }
 
 .container {
-  background: white;
-  padding: 20px;
-  width: 320px;
+  background: #ffffff;
+  padding: 30px;
+  width: 350px;
   margin: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-input {
-  width: 65%;
-  padding: 8px;
+h1 {
+  margin-bottom: 20px;
+  color: #4a00e0;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 10px;
+  border: 2px solid #4a00e0;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
 button {
-  padding: 8px 10px;
-  margin-left: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #8b6cc5;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a00e5;
 }
 
 li {
   text-align: left;
-  padding: 8px;
+  padding: 10px;
   margin-top: 10px;
-  background: #eee;
+  background: #e0e0ff;
+  border-left: 5px solid #4a00e0;
   list-style: none;
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .completed {
   text-decoration: line-through;
-  color: gray;
+  color: #888;
 }
 
-.task-text {
-  flex-grow: 1;
-  margin-right: 10px;
+.stick-checkbox {
+  transform: scale(1.2);
+  cursor: pointer;
 }

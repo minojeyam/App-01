@@ -14,23 +14,18 @@ function addTask() {
     taskText.classList.toggle("completed");
   });
 
-  const stickLabel = document.createElement("label");
-  stickLabel.style.fontSize = "12px";
-  stickLabel.style.display = "flex";
-  stickLabel.style.alignItems = "center";
-  stickLabel.innerHTML = `
-    <input type="checkbox" class="stick-checkbox" />
-    Stick
-  `;
+  const stickCheckbox = document.createElement("input");
+  stickCheckbox.type = "checkbox";
+  stickCheckbox.className = "stick-checkbox";
 
-  stickLabel.querySelector("input").addEventListener("change", function () {
+  stickCheckbox.addEventListener("change", function () {
     if (this.checked) {
       li.remove();
     }
   });
 
   li.appendChild(taskText);
-  li.appendChild(stickLabel);
+  li.appendChild(stickCheckbox);
   taskList.appendChild(li);
   taskInput.value = "";
 }
