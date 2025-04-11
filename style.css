@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  width: 320px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 65%;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 10px;
+  margin-left: 5px;
+}
+
+li {
+  text-align: left;
+  padding: 8px;
+  margin-top: 10px;
+  background: #eee;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
